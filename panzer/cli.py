@@ -165,6 +165,7 @@ def pandoc_opt_parse(args):
     # general options
     opt_parser.add_argument("--data-dir")
     # reader options
+    opt_parser.add_argument('--read') # read allowed in commandline metadata 
     opt_parser.add_argument('--parse-raw', '-R', action='store_true')
     opt_parser.add_argument('--smart', '-S', action='store_true')
     opt_parser.add_argument('--old-dashes', action='store_true')

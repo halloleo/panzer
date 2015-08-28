@@ -38,7 +38,7 @@ PANDOC_BAD_OPTS = ['--dump-args',
 
 # forbidden options for 'commandline' metadata field
 PANDOC_BAD_COMMANDLINE = ['write',
-                          'read',
+                          #'read', # read allowed in commandline metadata
                           'from',
                           'to',
                           'filter',
@@ -69,6 +69,7 @@ PANDOC_OPT_PHASE = {# general options
                     # reader options
                     'parse-raw':               'r',
                     'smart':                   'r',
+                    'read':                    'r', # read allowed in commandline metadata
                     'old-dashes':              'r',
                     'base-header-level':       'r',
                     'indented-code-classes':   'r',
